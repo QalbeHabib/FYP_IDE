@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MyEditor from "./editor";
-import classNames from "classnames";
+// import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
 import {
   Grid,
@@ -143,16 +143,16 @@ int main()
                 />
               )}
               <div
-                className={classNames(classes.runcompile)}
-                style={curstate == "comp" ? this.style.main : this.style.back}
+                // className={classNames(classes.runcompile)}
+                // style={curstate == "comp" ? this.style.main : this.style.back}
               >
                 <Typography variant="h4">Please Wait</Typography>
                 <CircularProgress color="secondary" />
                 <Typography variant="h5">Compiling</Typography>
               </div>
               <div
-                className={classNames(classes.runcompile)}
-                style={curstate == "run" ? this.style.main : this.style.back}
+                // className={classNames(classes.runcompile)}
+                // style={curstate == "run" ? this.style.main : this.style.back}
               >
                 <Typography variant="h4">Prgram Running</Typography>
               </div>
