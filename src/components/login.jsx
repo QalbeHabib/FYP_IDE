@@ -14,7 +14,7 @@ import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import { connect } from "react-redux";
 class Login extends Component {
   // constructor(props){
-  //     super(props);n 
+  //     super(props);n
   //     this.state={
   //         email:"",
   //         pass:"",
@@ -25,7 +25,7 @@ class Login extends Component {
   cvalpass = false;
   valpass = false;
   register = (e) => {
-    console.log('some')
+    console.log("some");
     e.preventDefault();
     if (this.valpass && this.cvalpass) {
       let data = {

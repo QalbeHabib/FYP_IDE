@@ -15,6 +15,7 @@ import Firstpage from "./firstpage";
 import Login from "./login";
 import Programs from "./programs";
 import { connect } from "react-redux";
+import { FaFreeCodeCamp } from "react-icons/fa";
 class MainPage extends React.Component {
   constructor(props) {
     super(props);
@@ -92,16 +93,19 @@ class MainPage extends React.Component {
     const { socket, user } = this.props;
     return (
       <CssBaseline>
-        <AppBar position="static" color="primary" position="sticky">
-          <Toolbar>
-            <Typography
-              variant="h6"
-              color="inherit"
-              style={{ flex: 1 }}
-              align="left"
-            >
-              Code Editor
-            </Typography>
+        <AppBar
+          backgroundColor="#053552"
+          sx={{ backgroundColor: "#053552" }}
+          top="0"
+          position="sticky"
+        >
+          <Toolbar backgroundColor="#053552">
+            <div className="grow font-bold text-xl capitalize flex items-center space-x-4">
+              <FaFreeCodeCamp size={40} />
+              <Link to="/">
+                <p>Online IDE</p>
+              </Link>
+            </div>
             <div>
               <Menu
                 open={Boolean(menuopen)}

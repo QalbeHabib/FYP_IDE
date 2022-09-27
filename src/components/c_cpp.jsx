@@ -19,6 +19,8 @@ const styles = (theme) => ({
   },
   runcompile: {
     position: "absolute",
+    display: "flex",
+    justifyContent: "center",
     width: "98%",
     backgroundColor: "rgba(151, 151, 151,0.3)",
     height: "660px",
@@ -31,6 +33,7 @@ const styles = (theme) => ({
     color: "white",
     height: "30px",
     width: "150px",
+
     borderTopLeftRadius: "10px",
     borderTopRightRadius: "10px",
   },
@@ -184,13 +187,17 @@ int main()
               </div>
               <div style={{ width: "100%" }}>
                 <div className={classes.headline}>
-                  <Typography variant="h7">Execution</Typography>
+                  <p className="flex items-center justify-center pt-1 mt-1">
+                    Execution
+                  </p>
                 </div>
                 <Term socket={socket}></Term>
               </div>
               <div style={{ marginTop: "20px", width: "100%" }}>
                 <div className={classes.headline}>
-                  <Typography variant="h7">Compilation</Typography>
+                  <p className="flex items-center justify-center pt-1 mt-1">
+                    Compilation
+                  </p>
                 </div>
                 <textarea
                   readOnly
